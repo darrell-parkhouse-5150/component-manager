@@ -1,0 +1,17 @@
+.main-content {
+    width: 700px;
+    border: 1px dashed red;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    .editor {
+        border-bottom: 1px dashed red;
+        height: 75%;
+        padding: 20px 0 20px 20px;
+    }
+
+    .info {
+        padding: 20px 0 20px 20px;
+    }
+}

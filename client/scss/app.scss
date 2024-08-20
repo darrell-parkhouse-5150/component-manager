@@ -1,0 +1,14 @@
+@import "partials/component-manager";
+@import "partials/left-sidebar";
+@import "partials/right-sidebar";
+@import "partials/main-content";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+}

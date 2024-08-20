@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="counter.png" type="image/x-icon">
+</head>
+<body>
+    <script>
+        
+        const getTotalLineCount = async (req, res) => {
+            try {
+                const sql = /*sql*/`
+                    select c.loc from components c;
+                `;
+
+                const result = db.query(sql);
+
+                const tloc = result.reduce((a, b) => {
+                    a + b
+                }, 0);
+
+                return tloc;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        getTotalLineCount();
+    </script>
+</body>
+</html>
